@@ -6,3 +6,12 @@ fun main(args: Array<String>) {
 
 fun getGameChoice(optionsParam: Array<String>) =
     optionsParam[(Math.random() * optionsParam.size).toInt()]
+
+fun getUserChoice(optionsParam: Array<String>): String {
+    //Запросить у пользователя его выбор
+    print("Please enter one of the following:")
+    for (item in optionsParam) print(" $item")
+    println(".")
+    val userInput = readLine()
+    return ""
+}
